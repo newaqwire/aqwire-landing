@@ -8,7 +8,7 @@ Rebuilt from Internet Archive / Wayback Machine captures of `aqwire.co`
 ```bash
 git init -b main
 git add -A
-git commit -m "Rebuild aqwire.co from Wayback Machine captures"
+git commit -m "Rebuild aqwire.co"
 git remote add origin git@github.com:<you>/<repo>.git
 git push -u origin main
 ```
