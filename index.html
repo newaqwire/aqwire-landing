@@ -1,0 +1,508 @@
+<!--Aqwire Main Landing Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqwire Payments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+
+</head>
+    <body class="bg-white pt-8">
+
+        <!-- Navbar -->
+        <nav class="bg-white max-w-7xl mx-auto border-neutral-200 border-t-0 border shadow h-24 rounded-2xl sticky top-4 z-50 mt-10">
+            <div class="flex justify-between items-center w-full mx-8 h-full">
+                <div class="flex justify-start gap-6 text-lg text-gray-500 items-center">
+                    <a href="./index.html"><img class="h-10 my-auto" src="./assets/logo-brand.png" alt="aqwire-logo"></a>
+                    <div class="hidden md:flex gap-4">
+                    <a href="./enterprise/index.html" class="nav-link">
+                        <span class="nav-link-text">Enterprise</span>
+                    </a>
+                    <p class="text-aqwire-blue">|</p>
+                    <a href="./payers/index.html" class="nav-link">
+                        <span class="nav-link-text">Payers</span>
+                    </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex justify-end gap-6 text-gray-500 items-center">
+                    <a href="./news/index.html" class="nav-link">
+                        <span class="nav-link-text">News</span>
+                    </a>
+                    <a href="./about/index.html" class="nav-link">
+                        <span class="nav-link-text">About</span>
+                    </a>
+                    <a href="./contact-us/index.html" class="nav-link">
+                        <span class="nav-link-text">Contact Us</span>
+                    </a>
+                    <a href="https://aqwire.zohodesk.com/portal/en/home" class="nav-link">
+                        <span class="nav-link-text">FAQs</span>
+                    </a>
+                    <a href="./contact-us/index.html" class="primary-button">Talk to us</a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="menu" class="fixed z-10 pt-24 inset-0 bg-white flex flex-col gap-6 text-center text-gray-500 hidden">
+                <button id="close-btn" class="absolute top-8 right-8 text-gray-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="./enterprise/index.html" class="hover:underline">Aqwire for Enterprises</a>
+                <a href="./enterprise/index.html" class="hover:underline">Aqwire for Payers</a>
+                <a href="./news/index.html" class="hover:underline">News</a>
+                <a href="./about/index.html" class="hover:underline">About</a>
+                <a href="./contact-us/index.html" class="hover:underline">Contact Us</a>
+                <a href="https://aqwire.zohodesk.com/portal/en/home" class="hover:underline">FAQs</a>
+            </div>
+        </nav>
+
+
+    <!-- Hero Section -->
+    <article class="lg:mt-10 md:mt-4 bg-transparent">
+            <div class="max-w-7xl flex-col  my-5 mx-auto rounded-3xl drop-shadow-lg relative bg-gradient-to-br space-y-20 from-blue-400 to-violet-900 lg:w-full ">
+                    <div class="font-extrabold z-0 block overflow-hidden" aria-hidden>
+                        <span class="currency-symbol absolute top-2 left-8 z-0 rotate-45 text-[13rem] md:text-[8rem] lg:text-[13rem] opacity-50 text-blue-600 sm:block">
+                            &dollar;
+                        </span>
+                        <span class="currency-symbol absolute -top-6 left-[40rem] z-0 -rotate-45 text-[8rem] md:text-[6rem] lg:text-[8rem] opacity-50 text-blue-600 hidden md:block"> &#8369;</span>
+                        <span class="currency-symbol absolute top-[20rem] left-[60rem] z-0 opacity-50 -rotate-[23deg] text-[12rem] md:text-[8rem] lg:text-[12rem] text-blue-400 hidden lg:block"> &yen;</span>
+                        <span class="currency-symbol absolute top-[4rem] left-[24rem] z-0 opacity-50 -rotate-[23deg] text-[8rem] md:text-[6rem] lg:text-[8rem] text-blue-600 hidden md:block">  &#xFDFC;</span>
+                        <span class="currency-symbol absolute top-[18rem] left-[10rem] z-0 opacity-50 -rotate-[32deg] text-[8rem] md:text-[6rem] lg:text-[8rem] text-blue-400 sm:block"> &#x62f;&#x2e;&#x625;</span>
+                        <span class="currency-symbol absolute top-[20rem] left-[40rem] z-0 opacity-50 -rotate-[18deg] text-[8rem] md:text-[6rem] lg:text-[8rem] text-blue-400 hidden md:block"> &euro;</span>
+                        <span class="currency-symbol absolute top-[6rem] left-[70rem] z-0 opacity-50 rotate-[18deg] text-[13rem] md:text-[8rem] lg:text-[13rem] text-blue-400 hidden lg:block"> &pound;</span>
+
+                    </div>
+                    <div class="mt-10 mx-auto max-w-7xl flex flex-col gap-6 relative text-center">
+                        <h1 class="lg:text-6xl block tracking-normal font-extrabold space-y-2 text-white text-3xl md:text-5xl">
+                            Seamless, Secure Payments <br> To the Philippines
+                        </h1>
+
+                        <a class="secondary-button max-w-80 mx-auto sm:" href="./contact-us/"> Talk to Us</a>
+
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-center  mb-8">
+                        <a href="./enterprise/" class=" z-10 bg-primary-blue bg-opacity-75 text-white  sm:rounded-3xl sm:rounded-e-none flex-1  mx-auto group hover:shadow-lg hover:-translate-y-1 duration-300">
+                            <div class="flex items gap-2 items-center p-4 lg:p-12">
+                                <div class="w-2/3">
+                                    <h2 class="font-bold text-2xl mb-2">For Enterprises</h2>
+                                    <p class="text-md mb-4">Aqwire helps enterprises for their billing, receiving, and managing payments for your clients, anywhere in the world.</p>
+                                    <div class="text-blue-400 underline font-bold flex items-center justify-between">
+                                        <span>Learn more</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1/3">
+                                    <img class="rounded-xl group-hover:border-aqwire-blue group-hover:border-4 group-hover:duration-100" src="./assets/enterprisephoto-updated.png" alt="">
+
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="./payers/" class="z-10 bg-primary-blue bg-opacity-75 text-white rounded-b-3xl sm:rounded-b-none sm:rounded-r-3xl  flex-1 mx-auto group hover:shadow-lg hover:-translate-y-1 duration-300">
+                            <div class="flex items gap-2 items-center p-4 lg:p-12">
+                                <div class="w-2/3"> <h2 class="font-bold text-2xl mb-2">For Payers</h2>
+                                    <p class="text-md mb-4">Easily make payments from anywhere in the world. Aqwire accepts all major currencies to make payments more convenient for you and everyone.</p>
+                                    <div class="text-blue-400 underline font-bold flex items-center justify-between">
+                                        <span>Learn more</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1/3">
+                                    <img class="rounded-xl group-hover:border-aqwire-blue group-hover:border-4 group-hover:duration-100" src="./assets/PayPhoto.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </article>
+
+        <!-- Partner Section -->
+        <div class="bg-white py-12">
+            <div class="items-center sm:px-6 lg:px-8">
+                <h2 class="text-center text-2xl leading-9 font-bold tracking-tight text-cta-blue mb-8">
+                    Partners/Investors
+                </h2>
+                <div class="overflow-hidden w-full mx-auto relative">
+                    <div class="carousel-track flex animate-scroll">
+                        <!-- Original items -->
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.cento.vc/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/cento.png" alt="Partner 1"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.spiral-ventures.com/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/spiralventures.png" alt="Partner 2"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.gentree.asia/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/gentree.png" alt="Partner 3"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.vulpesventures.com/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/vulpes.png" alt="Partner 4"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.betatron.co/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/betatron.png" alt="Partner 5"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.propertyguru.com.sg/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/propertyguru.png" alt="Partner 6"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="http://54.251.84.27/iHub/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/PIHLogo.png" alt="Partner 7"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.ndc.gov.ph/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/NDCLogo.png" alt="Partner 8"></a>
+                        </div>
+                        <!-- Duplicate items for continuous scrolling -->
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.cento.vc/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/cento.png" alt="Partner 1"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.spiral-ventures.com/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/spiralventures.png" alt="Partner 2"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.gentree.asia/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/gentree.png" alt="Partner 3"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.vulpesventures.com/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/vulpes.png" alt="Partner 4"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.betatron.co/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/betatron.png" alt="Partner 5"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.propertyguru.com.sg/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/propertyguru.png" alt="Partner 6"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="http://54.251.84.27/iHub/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/PIHLogo.png" alt="Partner 7"></a>
+                        </div>
+                        <div class="carousel-item flex-shrink-0 px-4 transition-transform duration-300 hover:scale-105">
+                            <a href="https://www.ndc.gov.ph/"><img class="h-16 md:h-20 lg:h-24 object-contain mx-auto" src="./assets/NDCLogo.png" alt="Partner 8"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--How it works section-->
+
+    <section aria-labelledby="how-we-handle-payments">
+        <div class="py-12 max-w-7xl text-center lg:text-left mx-auto mb-8 px-4 sm:px-6 lg:px-8">
+            <h3 id="how-we-handle-payments" class="text-cta-blue text-lg font-bold mb-4">How We Handle Payments</h3>
+            <h2 class="text-2xl text-primary-blue font-bold mb-10" role="heading" aria-level="2">Payments are complex, but we make it simple</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div>
+                    <img class="mx-auto" src="./assets/collect.png" alt="How It Works 1">
+                    <h1 class="text-xl tracking-normal font-extrabold text-primary-blue text-center py-3" role="heading" aria-level="3">Collect</h1>
+                    <p class="text-base text-gray-600">Aqwire enables your business to collect payments from all over the world</p>
+                </div>
+                <div>
+                    <img class="mx-auto" src="./assets/reconcile.png" alt="How It Works 2">
+                    <h1 class="text-xl tracking-normal font-extrabold text-primary-blue text-center py-3" role="heading" aria-level="3">Reconcile</h1>
+                    <p class="text-base text-gray-600">Easily reconcile payments using our Enterprise Dashboard to properly match your books.</p>
+                </div>
+                <div>
+                    <img class="mx-auto" src="./assets/receive.png" alt="How It Works 3">
+                    <h1 class="text-xl tracking-normal font-extrabold text-primary-blue text-center py-3" role="heading" aria-level="3">Receive</h1>
+                    <p class="text-base text-gray-600">Receive PHP on your preferred bank account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="bg-primary-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center lg:text-left mb-12 max-w-3xl mx-auto lg:mx-0">
+                <h2 class="text-xl font-semibold mb-4">Services</h2>
+                <h3 class="text-3xl font-bold mb-4">Our services are equipped with features to satisfy both enterprises and payers.</h3>
+                <p class="text-lg">Enabling global payments will help you grow your business and help your clients pay seamlessly. Trusted by over 100,000 payers.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                    <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                        <path d="M22 27V31M34 25V29M33 20C35.4487 20 36.7731 20.3748 37.4321 20.6654C37.5199 20.7042 37.5638 20.7235 37.6904 20.8444C37.7663 20.9168 37.9049 21.1294 37.9405 21.2281C38 21.3927 38 21.4827 38 21.6627V32.4111C38 33.3199 38 33.7743 37.8637 34.0079C37.7251 34.2454 37.5914 34.3559 37.3319 34.4472C37.0769 34.5369 36.562 34.438 35.5322 34.2401C34.8114 34.1017 33.9565 34 33 34C30 34 27 36 23 36C20.5513 36 19.2269 35.6252 18.5679 35.3346C18.4801 35.2958 18.4362 35.2765 18.3096 35.1556C18.2337 35.0832 18.0951 34.8706 18.0595 34.7719C18 34.6073 18 34.5173 18 34.3373L18 23.5889C18 22.6801 18 22.2257 18.1363 21.9921C18.2749 21.7546 18.4086 21.6441 18.6681 21.5528C18.9231 21.4631 19.438 21.562 20.4678 21.7598C21.1886 21.8983 22.0435 22 23 22C26 22 29 20 33 20ZM30.5 28C30.5 29.3807 29.3807 30.5 28 30.5C26.6193 30.5 25.5 29.3807 25.5 28C25.5 26.6193 26.6193 25.5 28 25.5C29.3807 25.5 30.5 26.6193 30.5 28Z" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4 class="text-lg font-bold mb-2">Accept multiple currencies</h4>
+                    <p>We currently support every major currency. We're working on making it globally accessible by onboarding more currencies.</p>
+                </div>
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                    <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                        <path d="M38 26H18M27 35L34.8 35C35.9201 35 36.4802 35 36.908 34.782C37.2843 34.5903 37.5903 34.2843 37.782 33.908C38 33.4802 38 32.9201 38 31.8V24.2C38 23.0799 38 22.5198 37.782 22.092C37.5903 21.7157 37.2843 21.4097 36.908 21.218C36.4802 21 35.9201 21 34.8 21H33M27 35L29 37M27 35L29 33M23 35H21.2C20.0799 35 19.5198 35 19.092 34.782C18.7157 34.5903 18.4097 34.2843 18.218 33.908C18 33.4802 18 32.9201 18 31.8V24.2C18 23.0799 18 22.5198 18.218 22.092C18.4097 21.7157 18.7157 21.4097 19.092 21.218C19.5198 21 20.0799 21 21.2 21H29M29 21L27 23M29 21L27 19" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4 class="text-lg font-bold mb-2">Accept auto-debit enrollments</h4>
+                    <p>Enhance your payment processes by enabling auto-debit for your clients. Auto-debit ensures secure, consistent, and on-time payments.</p>
+                </div>
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                    <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                        <path d="M29.5295 24.3519C28.9571 24.7599 28.2566 25 27.5 25C25.567 25 24 23.433 24 21.5C24 19.567 25.567 18 27.5 18C28.753 18 29.8522 18.6584 30.4705 19.6481M22 36.0872H24.6103C24.9506 36.0872 25.2889 36.1277 25.6188 36.2086L28.3769 36.8789C28.9753 37.0247 29.5988 37.0388 30.2035 36.9214L33.253 36.3281C34.0585 36.1712 34.7996 35.7854 35.3803 35.2205L37.5379 33.1217C38.154 32.5234 38.154 31.5524 37.5379 30.9531C36.9832 30.4134 36.1047 30.3527 35.4771 30.8103L32.9626 32.6449C32.6025 32.9081 32.1643 33.0498 31.7137 33.0498H29.2855L30.8311 33.0498C31.7022 33.0498 32.4079 32.3633 32.4079 31.5159V31.2091C32.4079 30.5055 31.9156 29.892 31.2141 29.7219L28.8286 29.1417C28.4404 29.0476 28.0428 29 27.6431 29C26.6783 29 24.9319 29.7988 24.9319 29.7988L22 31.0249M36 22.5C36 24.433 34.433 26 32.5 26C30.567 26 29 24.433 29 22.5C29 20.567 30.567 19 32.5 19C34.433 19 36 20.567 36 22.5ZM18 30.6L18 36.4C18 36.9601 18 37.2401 18.109 37.454C18.2049 37.6422 18.3578 37.7951 18.546 37.891C18.7599 38 19.0399 38 19.6 38H20.4C20.9601 38 21.2401 38 21.454 37.891C21.6422 37.7951 21.7951 37.6422 21.891 37.454C22 37.2401 22 36.9601 22 36.4V30.6C22 30.0399 22 29.7599 21.891 29.546C21.7951 29.3578 21.6422 29.2049 21.454 29.109C21.2401 29 20.9601 29 20.4 29L19.6 29C19.0399 29 18.7599 29 18.546 29.109C18.3578 29.2049 18.2049 29.3578 18.109 29.546C18 29.7599 18 30.0399 18 30.6Z" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4 class="text-lg font-bold mb-2">Manage everything</h4>
+                    <p>With Aqwire's dashboard, you can easily manage, view and analyze the payments of your clients.</p>
+                </div>
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                    <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                        <path d="M36 28.5V22.8C36 21.1198 36 20.2798 35.673 19.638C35.3854 19.0735 34.9265 18.6146 34.362 18.327C33.7202 18 32.8802 18 31.2 18H24.8C23.1198 18 22.2798 18 21.638 18.327C21.0735 18.6146 20.6146 19.0735 20.327 19.638C20 20.2798 20 21.1198 20 22.8V33.2C20 34.8802 20 35.7202 20.327 36.362C20.6146 36.9265 21.0735 37.3854 21.638 37.673C22.2798 38 23.1198 38 24.8 38H28M30 27H24M26 31H24M32 23H24M30.5 35L32.5 37L37 32.5" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4 class="text-lg font-bold mb-2">Get daily payment reports</h4>
+                    <p>Daily reports are automatically generated and are sent to you to help you keep track of the payments.</p>
+                </div>
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                        <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                            <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                            <path d="M38 24.5H18M18 28.5H21.5467C22.0869 28.5 22.357 28.5 22.6181 28.5466C22.85 28.5879 23.0761 28.6563 23.2919 28.7506C23.535 28.8567 23.7598 29.0065 24.2092 29.3062L24.7908 29.6938C25.2402 29.9935 25.465 30.1433 25.7081 30.2494C25.9239 30.3437 26.15 30.4121 26.3819 30.4534C26.643 30.5 26.9131 30.5 27.4533 30.5H28.5467C29.0869 30.5 29.357 30.5 29.6181 30.4534C29.85 30.4121 30.0761 30.3437 30.2919 30.2494C30.535 30.1433 30.7598 29.9935 31.2092 29.6938L31.7908 29.3062C32.2402 29.0065 32.465 28.8567 32.7081 28.7506C32.9239 28.6563 33.15 28.5879 33.3819 28.5466C33.643 28.5 33.9131 28.5 34.4533 28.5H38M18 23.2L18 32.8C18 33.9201 18 34.4802 18.218 34.908C18.4097 35.2843 18.7157 35.5903 19.092 35.782C19.5198 36 20.0799 36 21.2 36L34.8 36C35.9201 36 36.4802 36 36.908 35.782C37.2843 35.5903 37.5903 35.2843 37.782 34.908C38 34.4802 38 33.9201 38 32.8V23.2C38 22.0799 38 21.5198 37.782 21.092C37.5903 20.7157 37.2843 20.4097 36.908 20.218C36.4802 20 35.9201 20 34.8 20L21.2 20C20.0799 20 19.5198 20 19.092 20.218C18.7157 20.4097 18.4097 20.7157 18.218 21.092C18 21.5198 18 22.0799 18 23.2Z" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                    <h4 class="text-lg font-bold mb-2">Multiple payment methods</h4>
+                    <p>Enable your users to have multiple payment methods based on their currency and country.</p>
+                </div>
+                <div class="bg-transparent p-6 rounded-lg text-center lg:text-left">
+                    <svg class="mb-2 mx-auto lg:mx-0" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#3E5C95"/>
+                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#6685BF" stroke-width="8"/>
+                        <path d="M24.9996 30C24.9996 30 26.3121 31.5 28.4996 31.5C30.6871 31.5 31.9996 30 31.9996 30M31.2496 25H31.2596M25.7496 25H25.7596M28.4996 36C33.194 36 36.9996 32.1944 36.9996 27.5C36.9996 22.8056 33.194 19 28.4996 19C23.8052 19 19.9996 22.8056 19.9996 27.5C19.9996 28.45 20.1555 29.3636 20.443 30.2166C20.5512 30.5376 20.6053 30.6981 20.6151 30.8214C20.6247 30.9432 20.6174 31.0286 20.5873 31.1469C20.5568 31.2668 20.4894 31.3915 20.3547 31.6408L18.7191 34.6684C18.4857 35.1002 18.3691 35.3161 18.3952 35.4828C18.4179 35.6279 18.5034 35.7557 18.6288 35.8322C18.7728 35.9201 19.0169 35.8948 19.5052 35.8444L24.6262 35.315C24.7813 35.299 24.8588 35.291 24.9295 35.2937C24.999 35.2963 25.0481 35.3029 25.1159 35.3185C25.1848 35.3344 25.2714 35.3678 25.4448 35.4345C26.3928 35.7998 27.4228 36 28.4996 36ZM31.7496 25C31.7496 25.2761 31.5258 25.5 31.2496 25.5C30.9735 25.5 30.7496 25.2761 30.7496 25C30.7496 24.7239 30.9735 24.5 31.2496 24.5C31.5258 24.5 31.7496 24.7239 31.7496 25ZM26.2496 25C26.2496 25.2761 26.0258 25.5 25.7496 25.5C25.4735 25.5 25.2496 25.2761 25.2496 25C25.2496 24.7239 25.4735 24.5 25.7496 24.5C26.0258 24.5 26.2496 24.7239 26.2496 25Z" stroke="#F4FDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4 class="text-lg font-bold mb-2">24/7 Customer Support</h4>
+                    <p>We know that payments work around the clock. With our live operator support and AI chatbot, we enable 24/7 inquiries regarding your customers' payments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="text-primary-blue p-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center justify-center w-full mb-12 mx-auto max-w-3xl">
+                <h2 class="text-xl text-cta-blue font-semibold mb-4">Secure and Compliant</h2>
+                <h3 class="text-3xl font-bold mb-4">Your payments are safe with us</h3>
+                <p class="mb-6 text-gray-600">Aqwire is secure and is compliant. This means all your payments and information are protected and secured with top of the line encryption.</p>
+                <p class="text-gray-600">Our licenses, accreditations and partners:</p>
+                <div class="mt-6 gap-4 flex flex-wrap mx-auto w-full max-w-md">
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/pcidss.png" alt="Security Partner 1">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/bsp.png" alt="Security Partner 2">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/ustreasury.png" alt="Security Partner 5">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/phrepublic.png" alt="Security Partner 6">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/sec.png" alt="Security Partner 7">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class=" max-h-20" src="./assets/npc.png" alt="Security Partner 3">
+                    </div>
+                    <div class="col-span-1 mx-auto ">
+                        <img class="max-h-20" src="./assets/amlc.png" alt="Security Partner 4">
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- Payer Section -->
+    <section class="text-primary-blue text-center justify-center pb-8">
+        <div>
+            <h1 class="text-3xl font-bold mb-4">Looking to make a payment?</h2>
+            <p class="text-gray-600 mb-4">Visit our portals or make an account with Aqwire Personal</p>
+                <div class="flex justify-center flex-col sm:flex-row m-8 gap-5">
+                    <a href="https://app.aqwire.io" class="secondary-button ">Sign Up</a>
+                    <a href="https://pay.aqwire.io" class="primary-button">Visit our portals</a>
+                </div>
+        </div>
+    </section>
+
+    <!--Contact Us Section-->
+    <section class="mb-10">
+            <div class="z-10 container max-w-7xl mx-auto p-6 rounded-2xl bg-cta-blue">
+                <h1 class="text-white flex justify-center sm:text-2xl md:text-3xl font-bold mt-4 mb-4">Want to partner with us?</h2>
+                <div class="flex justify-center">
+                        <a href="./contact-us/" class="secondary-button w-48">Talk to us</a>
+                </div>
+            </div>
+    </section>
+
+ <!-- Footer Section -->
+  <footer class="bg-primary-blue text-white py-12">
+    <div class="max-w-7xl mx-auto md:px-6 lg:px-8">
+        <div class="flex gap-8 mb-8">
+            <div class="w-1/3 flex-shrink-0">
+                <img class="h-8 mb-4" src="./assets/logo-aqua-white.png" alt="Aqwire Logo">
+                <p class="text-sm">Aqwire is bridging the gap between real estate developers and home buyers all around the world by providing secure, convenient, and efficient global payment solution.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap w-full justify-between gap-6 lg:gap-8">
+                <div  class="min-w-[200px]">
+                    <h4 class="font-semibold mb-2 md:mb-4">Aqwire for</h4>
+                    <ul>
+                        <li><a href="./enterprise/index.html" class="text-sm hover:underline">Enterprise</a></li>
+                        <li><a href="./payers/index.html" class="text-sm hover:underline">Payer</a></li>
+                    </ul>
+                </div>
+                <div  class="min-w-[200px]">
+                    <h4 class="font-semibold mb-2 md:mb-4">About</h4>
+                    <ul>
+                        <li><a href="./about/index.html" class="text-sm hover:underline">About Us</a></li>
+                    </ul>
+                </div>
+                <div  class="min-w-[200px]">
+                    <h4 class="font-semibold mb-2 md:mb-4">Contact Us</h4>
+                    <ul>
+                        <li><a href="./contact-us/index.html" class="text-sm hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div  class="min-w-[200px]">
+                    <h4 class="font-semibold mb-2 md:mb-4">FAQs</h4>
+                    <ul>
+                        <li><a href="https://aqwire.zohodesk.com/portal/en/home" class="text-sm hover:underline">FAQ Page</a></li>
+                    </ul>
+                </div>
+                <div  class="min-w-[200px]">
+                    <h4 class="font-semibold mb-2 md:mb-4">News</h4>
+                    <ul>
+                        <li><a href="./news/index.html" class="text-sm hover:underline">Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mb-10 sm:col-span-2 lg:col-span-7">
+            <h4 class="font-semibold mb-4">Connect with us.</h4>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.facebook.com/Aqwireofficial" class="text-sm flex items-center hover:underline"><img src="./assets/facebook-icon.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Aqwire</span></a></li>
+                <li><a href="https://www.instagram.com/aqwireofficial/" class="text-sm flex items-center hover:underline"><img src="./assets/instagram-icon.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>@Aqwireofficial</span></a></li>
+                <li><a href="mailto:support@aqwire.io" class="text-sm flex items-center hover:underline"><img src="./assets/mail-02.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>support@aqwire.io</span></a></li>
+                <li><a href="tel:+14084003780" class="text-sm flex items-center hover:underline"><img src="./assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>International: +1 408 400 3780</span></a></li>
+                <li><a href="tel:+639626942113" class="text-sm flex items-center hover:underline"><img src="./assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Local: +63 962 694 2113</span></a></li>
+                <li><a href="tel:+639626940950" class="text-sm flex items-center hover:underline"><img src="./assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Local: +63 962 694 0950</span></a></li>
+            </ul>
+        </div>
+        <div class="mt-10">
+            <p>Copyright © 2024 Aqwire. All rights reserved.</p>
+            <div class="mt-2 space-x-4">
+                <a href="./terms-of-service/" class="hover:underline">Terms of Service</a>
+                <a href="./privacy-policy/" class="hover:underline">Privacy Policy</a>
+                <a href="./refund-policy/" class="hover:underline">Refund Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        //Navbar Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const menu = document.getElementById('menu');
+
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            if (isMenuOpen) {
+            menu.classList.remove('slide-in');
+            menu.classList.add('slide-out');
+            setTimeout(() => {
+                menu.classList.add('hidden');
+            }, 300);
+            }
+            else {
+            menu.classList.remove('hidden');
+            menu.classList.remove('slide-out');
+            menu.classList.add('slide-in');
+            }
+            isMenuOpen = !isMenuOpen;
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.carousel-item');
+            let scrollPosition = 0;
+            const scrollSpeed = 1; // Adjust this value to change the scroll speed
+            let isScrolling = true;
+
+            function scrollCarousel() {
+                if (isScrolling) {
+                    scrollPosition += scrollSpeed;
+                    if (scrollPosition >= track.scrollWidth / 2) {
+                        scrollPosition = 0;
+                    }
+                    track.style.transform = `translateX(-${scrollPosition}px)`;
+                }
+                requestAnimationFrame(scrollCarousel);
+            }
+
+            // Start the scrolling animation
+            scrollCarousel();
+
+            // Add event listeners to stop and resume scrolling on hover
+            items.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    isScrolling = false;
+                });
+                item.addEventListener('mouseleave', () => {
+                    isScrolling = true;
+                });
+            });
+        });
+
+
+
+  // Aqwarta Modal Show/Hide Logic with localStorage
+document.addEventListener('DOMContentLoaded', function() {
+  const aqwartaModal = document.getElementById('aqwartaModal');
+  const closeAqwartaModalBtn = document.getElementById('closeAqwartaModal');
+
+  // Check if modal was already shown
+  if (!localStorage.getItem('aqwartaModalShown')) {
+    if (aqwartaModal) aqwartaModal.style.display = 'flex';
+  } else {
+    if (aqwartaModal) aqwartaModal.style.display = 'none';
+  }
+
+  // Close modal on click and set localStorage flag
+  if (closeAqwartaModalBtn) {
+    closeAqwartaModalBtn.addEventListener('click', function() {
+      aqwartaModal.style.display = 'none';
+      localStorage.setItem('aqwartaModalShown', 'true');
+    });
+  }
+});
+
+
+        </script>
+
+
+
+
+
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqde9a5e9616e695b3811e405eeabca06ff844a54a0f16df522da84cc9d85425e1" defer></script>
+
+    </body>
+</html>

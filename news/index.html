@@ -1,0 +1,319 @@
+<!-- News -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+</head>  
+    
+<body class="bg-white pt-8">
+
+    <!-- Navbar -->
+    <nav class="bg-white max-w-7xl mx-auto border-neutral-200 border-t-0 border shadow h-24 rounded-2xl sticky top-4 z-50 mt-10">
+        <div class="flex justify-between items-center w-full mx-8 h-full">
+            <div class="flex justify-start gap-6 text-lg text-gray-500 items-center">
+                <a href="../index.html"><img class="h-10 my-auto" src="../assets/logo-brand.png" alt="aqwire-logo"></a>
+                <div class="hidden md:flex gap-4">
+                <a href="../enterprise/index.html" class="nav-link">
+                    <span class="nav-link-text">Enterprise</span>
+                </a>
+                <p class="text-aqwire-blue">|</p>
+                <a href="../payers/index.html" class="nav-link">
+                    <span class="nav-link-text">Payers</span>
+                </a>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-end gap-6 text-gray-500 items-center">
+                <a href="../news/index.html" class="nav-link">
+                    <span class="nav-link-text">News</span>
+                </a>
+                <a href="../about/index.html" class="nav-link">
+                    <span class="nav-link-text">About</span>
+                </a>
+                <a href="../contact-us/index.html" class="nav-link">
+                    <span class="nav-link-text">Contact Us</span>
+                </a>
+                <a href="https://aqwire.zohodesk.com/portal/en/home" class="nav-link">
+                    <span class="nav-link-text">FAQs</span>
+                </a>
+                <a href="../contact-us/index.html" class="primary-button">Talk to us</a>
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button id="menu-btn" class="text-gray-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="menu" class="fixed z-10 pt-24 inset-0 bg-white flex flex-col gap-6 text-center text-gray-500 hidden">
+            <button id="close-btn" class="absolute top-8 right-8 text-gray-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <a href="../enterprise/index.html" class="hover:underline">Aqwire for Enterprises</a>
+            <a href="../enterprise/index.html" class="hover:underline">Aqwire for Payers</a>
+            <a href="../news/index.html" class="hover:underline">News</a>
+            <a href="../about/index.html" class="hover:underline">About</a>
+            <a href="../contact-us/index.html" class="hover:underline">Contact Us</a>
+            <a href="https://aqwire.zohodesk.com/portal/en/home" class="hover:underline">FAQs</a>
+        </div>
+    </nav>
+        
+    <!-- Hero Section -->
+    <section class="py-16 text-center max-w-7xl mx-auto px-6">
+      <p class="text-sm font-semibold mb-4" style="color: #31D0DB;">News</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" style="color: #3F5770;">Making Headlines Worldwide</h1>
+      <p class="text-lg mb-12" style="color: #475467;">The latest updates on what's happening at Aqwire.</p>
+    </section>
+    
+    <!-- News Grid -->
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- News Card 1 -->
+        <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="relative h-80 overflow-hidden bg-gray-100">
+            <img src="../assets/figtree_aqwire.svg" alt="Payment methods" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <p class="text-base mb-3" style="color: #5B6B8C;">October 2025</p>
+            <h2 class="text-2xl font-bold mb-4" style="color: #3F5770;">Real estate meets fintech: Aqwire, FigTree roll out instant payment terminals</h2>
+            <p class="text-base mb-6 leading-relaxed" style="color: #8898AA;">For years, property payments have relied on online portals, wire transfers, and face-to-face negotiations that end in paperwork. Aqwire, one of the Philippines' pioneering fintech firms, wants to..</p>
+            <a href="../news/figtree-detailpage.html" class="primary-button block text-center" style="width: 200px;">Read More</a>
+          </div>
+        </article>
+
+        <!-- News Card 2 -->
+        <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="relative h-80 overflow-hidden bg-gray-100">
+            <img src="../assets/google_apple_pay.svg" alt="Payment methods" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <p class="text-base mb-3" style="color: #5B6B8C;">October 2025</p>
+            <h2 class="text-2xl font-bold mb-4" style="color: #3F5770;">Philippines getting Google Pay, Apple Pay for cross border payments</h2>
+            <p class="text-base mb-6 leading-relaxed" style="color: #8898AA;">MANILA, Philippines —Leading fintech innovator in cross-border and local payments Aqwire has officially become the local company to process transactions via Google Pay and Apple Pay for cross-border...</p>
+            <a href="../news/gapplepay-detailpage.html" class="primary-button block text-center" style="width: 200px;">Read More</a>
+          </div>
+        </article>
+
+        <!-- News Card 3 -->
+        <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="relative h-80 overflow-hidden bg-gray-100">
+            <img src="../assets/google_apple_pay_first.svg" alt="Payment methods" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <p class="text-base mb-3" style="color: #5B6B8C;">September 2025</p>
+            <h2 class="text-2xl font-bold mb-4" style="color: #3F5770;">Aqwire Becomes First Philippine Company to Process Google Pay ..</h2>
+            <p class="text-base mb-6 leading-relaxed" style="color: #8898AA;">Aqwire, a leading fintech innovator in cross-border and local payments, has become the first payments company in the Philippines to process transactions ..</p>
+            <a href="../news/malayafirst-detailpage.html" class="primary-button block text-center" style="width: 200px;">Read More</a>
+          </div>
+        </article>  
+
+        <!-- News Card 4 -->
+        <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="relative h-80 overflow-hidden bg-gray-100">
+            <img src="../assets/aqwire_filinvest_sepa.svg" alt="Payment methods" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <p class="text-base mb-3" style="color: #5B6B8C;">September 2025</p>
+            <h2 class="text-2xl font-bold mb-4" style="color: #3F5770;">Aqwire partners with Filinvest Land for PH first ever Euro SEPA...</h2>
+            <p class="text-base mb-6 leading-relaxed" style="color: #8898AA;">Fintech innovator Aqwire has partnered with premier property developer Filinvest Land, Inc. to complete the Philippines’ first real estate transaction using the Single Euro Payments Area (SEPA)...</p>
+            <a href="../news/aqwiresepa-detailpage.html" class="primary-button block text-center" style="width: 200px;">Read More</a>
+          </div>
+        </article>  
+
+        <!-- News Card 5 -->
+        <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="relative h-80 overflow-hidden bg-gray-100">
+            <img src="../assets/aqwire_aqwarta.svg" alt="Payment methods" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <p class="text-base mb-3" style="color: #5B6B8C;">September 2025</p>
+            <h2 class="text-2xl font-bold mb-4" style="color: #3F5770;">Aqwire powers growth with AQWARTA launch at PAREB ...</h2>
+            <p class="text-base mb-6 leading-relaxed" style="color: #8898AA;">Leading fintech innovator Aqwire recently partnered with PAREB-Pasay Makati Realty Board, Inc. at its 7th Business Membership Meeting on August 26, 2025, at Paseo de Magallanes, Makati Cit..</p>
+            <a href="../news/aqwartapareb-detailpage.html" class="primary-button block text-center" style="width: 200px;">Read More</a>
+          </div>
+        </article>  
+
+        
+
+      </div>
+
+      </div>
+
+      <!-- View More Button -->
+      <div class="w-full flex justify-center mt-12 pb-16">
+        <a href="#" 
+           id="view-more-btn" 
+           class="secondary-button text-center" 
+           style="width: 200px;">
+           View More
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-blue text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto md:px-6 lg:px-8">
+            <div class="flex gap-8 mb-8">
+                <div class="w-1/3 flex-shrink-0">
+                    <img class="h-8 mb-4" src="../assets/logo-aqua-white.png" alt="Aqwire Logo">
+                    <p class="text-sm">Aqwire is bridging the gap between real estate developers and home buyers all around the world by providing secure, convenient, and efficient global payment solution.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap w-full justify-between gap-6 lg:gap-8">
+                    <div class="min-w-[200px]">
+                        <h4 class="font-semibold mb-2 md:mb-4">Aqwire for</h4>
+                        <ul>
+                            <li><a href="../enterprise/" class="text-sm hover:underline">Enterprise</a></li>
+                            <li><a href="../payers/" class="text-sm hover:underline">Payer</a></li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[200px]">
+                        <h4 class="font-semibold mb-2 md:mb-4">About</h4>
+                        <ul>
+                            <li><a href="../about/" class="text-sm hover:underline">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[200px]">
+                        <h4 class="font-semibold mb-2 md:mb-4">Contact Us</h4>
+                        <ul>
+                            <li><a href="../contact-us/" class="text-sm hover:underline">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[200px]">
+                        <h4 class="font-semibold mb-2 md:mb-4">FAQs</h4>
+                        <ul>
+                            <li><a href="https://aqwire.zohodesk.com/portal/en/home" class="text-sm hover:underline">FAQ Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[200px]">
+                        <h4 class="font-semibold mb-2 md:mb-4">News</h4>
+                        <ul>
+                            <li><a href="https://aqwire.zohodesk.com/portal/en/home" class="text-sm hover:underline">Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 sm:col-span-2 lg:col-span-7">
+                <h4 class="font-semibold mb-4">Connect with us.</h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                    <li><a href="https://www.facebook.com/Aqwireofficial" class="text-sm flex items-center hover:underline"><img src="../assets/facebook-icon.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Aqwire</span></a></li>
+                    <li><a href="https://www.instagram.com/aqwireofficial/" class="text-sm flex items-center hover:underline"><img src="../assets/instagram-icon.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>@Aqwireofficial</span></a></li>
+                    <li><a href="mailto:support@aqwire.io" class="text-sm flex items-center hover:underline"><img src="../assets/mail-02.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>support@aqwire.io</span></a></li>
+                    <li><a href="tel:+14084003780" class="text-sm flex items-center hover:underline"><img src="../assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>International: +1 408 400 3780</span></a></li>
+                    <li><a href="tel:+639626942113" class="text-sm flex items-center hover:underline"><img src="../assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Local: +63 962 694 2113</span></a></li>
+                    <li><a href="tel:+639626940950" class="text-sm flex items-center hover:underline"><img src="../assets/phone.png" alt="" class="h-4 w-4 mr-2 flex-shrink-0"><span>Local: +63 962 694 0950</span></a></li>
+                </ul>
+            </div>
+            <div class="mt-10">
+                <p>Copyright © 2024 Aqwire. All rights reserved.</p>
+                <div class="mt-2 space-x-4">
+                    <a href="../terms-of-service/" class="hover:underline">Terms of Service</a>
+                    <a href="../privacy-policy/" class="hover:underline">Privacy Policy</a>
+                    <a href="../refund-policy/" class="hover:underline">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const menu = document.getElementById('menu');
+
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            if (isMenuOpen) {
+                menu.classList.remove('slide-in');
+                menu.classList.add('slide-out');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 300);
+            } else {
+                menu.classList.remove('hidden');
+                menu.classList.remove('slide-out');
+                menu.classList.add('slide-in');
+            }
+            isMenuOpen = !isMenuOpen;
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+    });
+
+    // View More Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewMoreBtn = document.getElementById('view-more-btn');
+        const newsCards = document.querySelectorAll('article');
+        const cardsPerPage = 4; // Show 4 cards initially
+        let currentlyShown = cardsPerPage;
+
+        // Hide cards beyond the initial display count
+        function initializeCards() {
+            newsCards.forEach((card, index) => {
+                if (index >= cardsPerPage) {
+                    card.classList.add('hidden');
+                }
+            });
+            
+            // Hide button if all cards are already visible
+            if (newsCards.length <= cardsPerPage) {
+                viewMoreBtn.style.display = 'none';
+            }
+        }
+
+        // Show more cards when button is clicked
+        function showMoreCards() {
+            const cardsToShow = 2; // Show 2 more cards each time
+            const totalCards = newsCards.length;
+            
+            // Calculate end index
+            const endIndex = Math.min(currentlyShown + cardsToShow, totalCards);
+            
+            // Show the next batch of cards with smooth animation
+            for (let i = currentlyShown; i < endIndex; i++) {
+                newsCards[i].classList.remove('hidden');
+                newsCards[i].style.opacity = '0';
+                newsCards[i].style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    newsCards[i].style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    newsCards[i].style.opacity = '1';
+                    newsCards[i].style.transform = 'translateY(0)';
+                }, 10);
+            }
+            
+            currentlyShown = endIndex;
+            
+            // Hide button if all cards are now visible
+            if (currentlyShown >= totalCards) {
+                viewMoreBtn.style.display = 'none';
+            }
+        }
+
+        // Event listener for View More button
+        viewMoreBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            showMoreCards();
+        });
+
+        // Initialize on page load
+        initializeCards();
+    });
+    </script> 
+
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
+    <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqde9a5e9616e695b3811e405eeabca06ff844a54a0f16df522da84cc9d85425e1" defer></script>
+   
+</body>
+</html>
